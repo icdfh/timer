@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер обратного отсчета</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Таймер обратного отсчета</h1>
+
+        <!-- Ввод времени -->
+        <div id="timer-settings">
+            <label for="minutes">Минуты:</label>
+            <input type="number" id="minutes" min="0" placeholder="00">
+
+            <label for="seconds">Секунды:</label>
+            <input type="number" id="seconds" min="0" max="59" placeholder="00">
+        </div>
+
+        <!-- Отображение таймера -->
+        <div id="timer-display">00:00</div>
+
+        <!-- Кнопки управления -->
+        <div id="controls">
+            <button id="start-button">Старт</button>
+            <button id="pause-button">Пауза</button>
+            <button id="reset-button">Сброс</button>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
